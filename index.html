@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>狗窝</title>
+  </head>
+  <style>
+  
+  * {
+        box-sizing: border-box;
+      }
+      
+      .titlebar{
+        background-color: #f1f1f1; 
+        text-align: center; 
+        padding: 10px
+      }
+
+      .touxiang{
+        border-radius: 60px;
+        width:100px;
+        height:100px;
+      }
+
+      .touxiang-nearby{
+        position: relative;
+        bottom: 40px;
+        font-weight: lighter;
+      }
+
+
+      /* 导航条 */
+      .topnav {
+        overflow: hidden;
+        background-color: #ddd;
+      }
+
+      /* 导航链接 */
+      .topnav a {
+        float: left;
+        position: relative;
+        left:50px;
+        display: block;
+        color: gray;
+        text-align: center;
+        padding: 25px 30px;
+        text-decoration: none;
+      }
+
+      /* 链接 - 修改颜色 */
+      .topnav a:hover {
+        background-color:gray ;
+        color: white;
+      }
+
+      /* 创建三个相等的列 */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+
+      /* 左右两侧宽度 */
+      .column.side {
+        width: 25%;
+      }
+
+      /* 中间区域宽度 */
+      .column.middle {
+        width: 50%;
+      }
+
+      /* 列后面清除浮动 */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* 响应式布局 - 宽度小于600px时设置上下布局 */
+      @media screen and (max-width: 600px) {
+        .column.side,
+        .column.middle {
+          width: 100%;
+        }
+      }
+
+      .maintext{
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 15px;
+        line-height: 1.8;
+      }
+
+
+
+
+      .main-img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+      .main-text{
+        font-weight: lighter;
+        font-size: 20px;
+        text-align: center;
+
+    }
+    
+    </style>
+
+
+  <body>
+    <div class="titlebar">
+      <h class="touxiang-nearby">狗</h>
+      <img class="touxiang" src="./img/tx.GIF"></img>
+      <h class="touxiang-nearby">窝</h>
+    </div>
+
+      <div class="topnav">
+      <a href="link02.html">假狗</a>
+      <a href="link03.html">狗啊</a>
+      <a href="link04.html">真狗</a>
+    </div>
+
+    <div class="titlebar">
+      <p class="main-text">小狗一家亲</p>
+    </div>
+    
+    <div class="row">
+      <div class="column side">
+        <img class="main-img" src="./img/B.GIF"></img>
+        <p class="main-text">最优秀.灵魂永远昂首挺胸.狗老鼠</p>
+      </div>
+
+      <div class="column middle">
+        <img class="main-img" src="./img/A.GIF"></img>
+        <p class="main-text">PC端走的偏左了.但是我还没改.马老狗</p>
+      </div>
+
+      <div class="column side">
+        <img class="main-img" src="./img/C.GIF"></img>
+        <p class="main-text">图源损坏.灰飞烟灭.皮卡丘狗</p>
+      </div>
+    </div>
+
+    <div
+      style="
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 40px;
+        font-size: 16px;
+      "
+    >
+      <p>狗窝.web</p>
+      <a href="./link01.html">了解更多奇珍异兽  </a>
+    </div>
+  </body>
+</html>
